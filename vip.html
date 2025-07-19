@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIP Program | RichGringo Casino</title>
+    <link rel="stylesheet" href="/styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'casino-blue': '#1e293b',
+                        'casino-red': '#c81248',
+                        'gold': '#ffd700',
+                    },
+                    fontFamily: {
+                        'western': ['Georgia', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-casino-blue text-white overflow-x-hidden">
+    <!-- ...existing header code... -->
+    <header class="floating-header fixed top-4 left-4 right-4 z-50 bg-casino-blue/90 backdrop-blur-sm rounded-2xl border border-gold/20 shadow-2xl">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="/">
+                    <img src="logo.svg" class="h-12 w-auto" alt="RichGringo Casino Logo">
+                </a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html#hero" class="nav-link hover:text-gold transition-colors">Home</a>
+                    <a href="index.html#games" class="nav-link hover:text-gold transition-colors">Games</a>
+                    <a href="index.html#bonuses" class="nav-link hover:text-gold transition-colors">Bonuses</a>
+                    <a href="index.html#about" class="nav-link hover:text-gold transition-colors">About</a>
+                    <a href="index.html#support" class="nav-link hover:text-gold transition-colors">Support</a>
+                    <a href="terms.html" class="nav-link hover:text-gold transition-colors">Terms</a>
+                    <a href="about-uk.html" class="nav-link hover:text-gold transition-colors">About UK</a>
+                    <a href="vip.html" class="nav-link hover:text-gold transition-colors">VIP</a>
+                </div>
+                <button onclick="window.location.href='/register'" class="cta-button bg-casino-red hover:bg-red-600 text-white px-6 py-2 rounded-full border-2 border-casino-red hover:border-red-600 transition-all transform hover:scale-105">
+                    Join Now
+                </button>
+            </div>
+        </nav>
+    </header>
+    <!-- Main Content -->
+    <section class="mt-16 py-20 bg-slate-800/50">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <h1 class="text-4xl font-bold text-center mb-12 text-shadow-3d text-gold">VIP Program</h1>
+            <div class="prose prose-lg text-gray-300 max-w-none">
+                <p class="mb-6">Unlock exclusive rewards and experiences with the <a class="underline hover:no-underline" href="/">RichGringo</a> VIP Program. Our VIPs enjoy personalised service, higher withdrawal limits, and access to special promotions and tournaments.</p>
+                <ul>
+                    <li>Dedicated VIP account manager</li>
+                    <li>Priority withdrawals and support</li>
+                    <li>Exclusive bonuses and cashback offers</li>
+                    <li>Invitations to VIP-only events and tournaments</li>
+                    <li>Personalised gifts and rewards</li>
+                </ul>
+                <p class="mt-6">To become a VIP, play regularly and reach the required loyalty level. Our team will contact you with an invitation when you qualify. Experience the ultimate in online casino luxury with RichGringo Casino.</p>
+            </div>
+        </div>
+    </section>
+    <!-- ...existing footer code... -->
+    <footer class="bg-slate-900 py-8 mt-20">
+        <div class="container mx-auto px-6 text-center text-gray-400">
+            <p>&copy; 2025 RichGringo Casino. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
